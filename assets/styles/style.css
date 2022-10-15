@@ -190,12 +190,9 @@ main #content {
 	margin-top: 18px;
 }
 
-.flexkiri {
-	background-color: #141626;
-}
-
+.flexkiri,
 .flexkanan {
-	background-color: #1a1c30;
+	background-color: #141626;
 }
 
 .flexkiri,
@@ -204,9 +201,10 @@ main #content {
 	flex: 30%;
 }
 
-.flexkiri,
+.flexkiri:hover,
 .flexkanan:hover {
-	background-color: #151727;
+	background-color: #1b1e31;
+	box-shadow: 0px 0px 5px black;
 }
 /* aside */
 aside {
