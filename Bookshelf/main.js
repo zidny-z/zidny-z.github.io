@@ -12,6 +12,7 @@ function navbarClass() {
 
 const localStorageKey = "DATA_BUKU";
 let data = [];
+localStorage.setItem(localStorageKey, JSON.stringify(data));
 
 let domJudul = document.querySelector("#inputBookTitle");
 let domPenulis = document.querySelector("#inputBookAuthor");
