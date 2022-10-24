@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookshelf | Buku Bacaan Anda</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<h2>Bookshelf App</h2>
+			</div>
+			<nav class="navbar">
+				<div class="topNavbar" id="topNavbarId">
+					<div class="navbarContent">
+						<a href="#sudahDibaca">Buku Selesai Dibaca</a>
+						<a href="#belumDibaca">Buku Belum Dibaca</a>
+						<a href="#tambah">Tambah Data</a>
+						<form id="searchSubmit">
+							<div class="search">
+								<label for="searchBookTitle"></label>
+								<input
+									id="searchBookTitle"
+									type="text"
+									placeholder="Cari berdasarkan judul"
+								/>
+								<button type="submit">Cari</button>
+							</div>
+						</form>
+						<a href="#" id="hamburgerBtn" onclick="navbarClass()"
+							>&#9776;</a
+						>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div id="content">
+				<section class="bacaan card">
+					<article id="sudahDibaca">
+						<h3 id="sudahBaca">Buku Selesai Dibaca</h3>
+						<table id="tabelSudahBaca">
+							<tr>
+								<th>Judul</th>
+								<th>Penulis</th>
+								<th>Tahun</th>
+								<th>Aksi</th>
+							</tr>
+							<!-- <tr>
+								<td>Petualangan Zidny Membangun Negeri</td>
+								<td>Zidny Zainul</td>
+								<td>2022</td>
+								<td class="aksi">
+									<button class="grey">Belum Dibaca</button>
+
+									<button class="red">Hapus</button>
+								</td>
+							</tr> -->
+						</table>
+					</article>
+				</section>
+				<section class="bacaan card">
+					<article id="belumDibaca">
+						<h3 id="belumBaca">Buku Belum Dibaca</h3>
+						<table id="tabelBelumBaca">
+							<tr>
+								<th>Judul</th>
+								<th>Penulis</th>
+								<th>Tahun</th>
+								<th>Aksi</th>
+							</tr>
+							<!-- <tr>
+								<td>Petualangan Zidny</td>
+								<td>Zidny</td>
+								<td>2022</td>
+								<td class="aksi">
+									<button class="grey">Sudah Dibaca</button>
+
+									<button class="red">Hapus</button>
+								</td>
+							</tr> -->
+						</table>
+					</article>
+				</section>
+				<section class="form card">
+					<article class="tambahData">
+						<h3 id="tambah">Tambah Data</h3>
+						<form id="inputBook">
+							<div class="input">
+								<label for="inputBookTitle">Judul</label>
+								<input
+									id="inputBookTitle"
+									placeholder="Judul Buku"
+									type="text"
+									required
+								/>
+							</div>
+							<div class="input">
+								<label for="inputBookAuthor">Penulis</label>
+								<input
+									id="inputBookAuthor"
+									placeholder="Nama Penulis"
+									type="text"
+									required
+								/>
+							</div>
+							<div class="input">
+								<label for="inputBookYear">Tahun</label>
+								<input
+									id="inputBookYear"
+									placeholder="Tahun Terbit"
+									type="number"
+									required
+								/>
+							</div>
+							<div class="input_inline">
+								<label for="inputBookIsComplete">Selesai dibaca</label>
+								<input id="inputBookIsComplete" type="checkbox" />
+							</div>
+							<button id="bookSubmit" type="submit">
+								Masukkan Buku ke rak
+								<!-- <span>Belum selesai dibaca</span> -->
+							</button>
+						</form>
+					</article>
+				</section>
+			</div>
+			<!-- <aside id="sidebar"></aside> -->
+		</main>
+		<footer>
+			<p>
+				Made with &#10084; by
+				<a href="https://www.linkedin.com/in/zidni-zainul/">Zidny Zainul</a>
+				for Submission
+				<a href="https://www.dicoding.com/academies/315/corridor"
+					>Belajar Membuat Front-End Web untuk Pemula</a
+				>
+			</p>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>
