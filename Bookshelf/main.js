@@ -10,8 +10,13 @@ function navbarClass() {
 
 // main js CRUS DOM
 
-const localStorageKey = "DATA_BUKU";
 let data = [];
+const localStorageKey = "DATA_BUKU";
+dataGet = JSON.parse(localStorage.getItem(localStorageKey));
+if (dataGet.length != 0) {
+	data = dataGet;
+}
+
 localStorage.setItem(localStorageKey, JSON.stringify(data));
 
 let domJudul = document.querySelector("#inputBookTitle");
